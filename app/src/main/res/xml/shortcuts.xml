@@ -1,0 +1,26 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="call"
+        android:enabled="true"
+        android:icon="@drawable/ic_phone"
+        android:shortcutShortLabel="@string/call_shortcut_short_label"
+        android:shortcutLongLabel="@string/call_shortcut_long_label"
+        android:shortcutDisabledMessage="@string/call_disabled_label">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.bendriss.shortcutsapp"
+            android:targetClass="com.bendriss.shortcutsapp.CallActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="messages"
+        android:enabled="true"
+        android:icon="@drawable/ic_messages"
+        android:shortcutShortLabel="@string/messages_shortcut_short_label"
+        android:shortcutLongLabel="@string/messages_shortcut_long_label"
+        android:shortcutDisabledMessage="@string/messages_disabled_label">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.bendriss.shortcutsapp"
+            android:targetClass="com.bendriss.shortcutsapp.MessagesActivity" />
+    </shortcut>
+</shortcuts>
