@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/callLayout"
         android:layout_width="0dp"
@@ -18,8 +17,8 @@
         >
         <ImageView
             android:id="@+id/imgCall"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -39,7 +38,7 @@
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/messagesLayout"
+        android:id="@+id/cameraLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toEndOf="@id/callLayout"
@@ -49,29 +48,26 @@
         app:layout_constraintWidth_percent="0.5"
         >
         <ImageView
-            android:id="@+id/imgMessage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/imgCamera"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:src="@drawable/ic_messages"
+            android:src="@drawable/ic_camera"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/imgMessage"
-            app:layout_constraintEnd_toEndOf="@id/imgMessage"
-            app:layout_constraintTop_toBottomOf="@id/imgMessage"
+            app:layout_constraintStart_toStartOf="@id/imgCamera"
+            app:layout_constraintEnd_toEndOf="@id/imgCamera"
+            app:layout_constraintTop_toBottomOf="@id/imgCamera"
             android:textColor="@color/black"
             android:layout_marginTop="6dp"
             android:textSize="20sp"
-            android:text="@string/messages"
+            android:text="@string/camera"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

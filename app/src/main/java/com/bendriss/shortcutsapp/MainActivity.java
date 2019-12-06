@@ -9,7 +9,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    ConstraintLayout callLayout,messagesLayout;
+    ConstraintLayout callLayout,cameraLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         callLayout = findViewById(R.id.callLayout);
-        messagesLayout = findViewById(R.id.messagesLayout);
+        cameraLayout = findViewById(R.id.cameraLayout);
 
         callLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        messagesLayout.setOnClickListener(new View.OnClickListener() {
+        cameraLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,MessagesActivity.class);
+                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
                 startActivity(intent);
             }
         });

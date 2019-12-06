@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">ShortcutsApp</string>
     <string name="call">Call</string>
-    <string name="messages">Messages</string>
+    <string name="camera">Camera</string>
     <string name="call_shortcut_short_label">Call</string>
     <string name="call_shortcut_long_label">Call</string>
     <string name="call_disabled_label">Call</string>
-    <string name="messages_shortcut_short_label">Messages</string>
-    <string name="messages_shortcut_long_label">Messages</string>
-    <string name="messages_disabled_label">Messages</string>
+    <string name="camera_shortcut_short_label">Camera</string>
+    <string name="camera_shortcut_long_label">Camera</string>
+    <string name="camera_disabled_label">Camera</string>
 </resources>
