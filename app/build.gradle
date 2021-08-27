@@ -11,6 +11,22 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+     signingConfigs {
+        release {
+            // You need to specify either an absolute path or include the
+            // keystore file in the same directory as the build.gradle file.
+            storeFile file("my-release-key.jks")
+            storePassword "AllNetworkPackages@lads"
+            keyAlias "All Network Packages"
+            keyPassword "AllNetworkPackages@lads"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            ...
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
